@@ -40,7 +40,7 @@ export const Header = () => {
                <MDBNavItem active={router.pathname === '/'}>
                   <Link href='/'>
                      <a className="nav-link">
-                        <MDBIcon icon="home" className="mr-1"/>Home
+                        <MDBIcon icon="home" className="mr-1"/>Homelander
                      </a>
                   </Link>
                </MDBNavItem>
