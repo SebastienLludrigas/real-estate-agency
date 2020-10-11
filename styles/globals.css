@@ -1,16 +1,87 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.globalImg {
+  width: 100%;
+  height: auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.globalColor {
+  color: #00695c;
 }
 
-* {
-  box-sizing: border-box;
+.globalButton {
+  border-radius: 8px;
+  background-color: #00695c;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-size: 13px;
+}
+
+.activated {
+  font-weight: bold;
+  background-color: #00695c;
+  pointer-events: none;
+  color: #fff;
+}
+
+.custom-paginate {
+  display: flex;
+  list-style: none;
+  height: 40px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  width: fit-content;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 40px;
+  
+}
+
+.paginate {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .globalImg {
+    width: 100%;
+    height: 250px;
+  }
+
+  .carouselItems {
+    transform: translate(0%, 0%);
+    min-height: 530px;
+  }
+
+  .carouselMain {
+    margin: 0 auto;
+    height: 530px;
+    width: 98%;
+  }
+
+  .paginateCenter {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .carouselItems {
+    transform: translate(0%, -10%);
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .carouselItems {
+    transform: translate(0%, -20%);
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .carouselItems {
+    transform: translate(0%, -30%);
+  }
 }
